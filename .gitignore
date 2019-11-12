@@ -1,0 +1,4 @@
+config/local.js
+coverage
+coverage.json
+node_modules

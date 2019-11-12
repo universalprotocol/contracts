@@ -1,0 +1,41 @@
+{
+  "name": "contracts",
+  "version": "1.0.0",
+  "description": "Universal Protocol Platform contracts",
+  "license": "MIT",
+  "author": "Universal Protocol",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "coverage": "./node_modules/.bin/solidity-coverage",
+    "lint": "eslint config migrations test truffle.js",
+    "solium": "./node_modules/.bin/solium -d contracts",
+    "start": "ganache-cli -a 40 -g 0x01 -e 100000 -i 1547047525792",
+    "test": "truffle test"
+  },
+  "pre-commit": [
+    "lint",
+    "solium",
+    "compile"
+  ],
+  "dependencies": {
+    "bignumber.js": "8.0.2",
+    "config": "3.0.1",
+    "openzeppelin-solidity": "2.1.3",
+    "prompt-confirm": "2.0.4",
+    "truffle": "5.0.5",
+    "truffle-ledger-provider": "https://github.com/uphold-forks/truffle-ledger-provider.git#765b89bf4481f131912d0878f8a076d570c7bced"
+  },
+  "devDependencies": {
+    "eslint": "5.10.0",
+    "eslint-config-uphold": "0.2.0",
+    "ganache-cli": "6.2.5",
+    "openzeppelin-test-helpers": "0.1.2",
+    "pre-commit": "1.2.2",
+    "solidity-coverage": "^0.6.7",
+    "solium": "1.2.3"
+  }
+}
