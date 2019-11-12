@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: node:11.7.0-alpine
+
+    working_directory: ~/contracts
+
+    steps:
+      - run: mkdir -p ~/.yarn-cache
+
+      - run: apk add --no-cache g++ gcc git linux-headers make openssh python eudev-dev libusb-dev
+
+      - checkout
+
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - v0-node-{{ checksum "yarn.lock" }}
+
+      - run:
+          name: Install Dependencies
+          command: yarn install --frozen-lockfile
+
+      - save_cache:
+          name: Save Yarn Package Cache
+          key: v0-node-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+            - node_modules
+
+      - run: yarn coverage
+
+      - store_artifacts:
+          path: coverage
+          prefix: coverage
