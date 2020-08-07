@@ -128,6 +128,40 @@ module.exports = {
         mainnet: '0xEFb3580aC7d1870d1cE0b66E00a723d0D09816E8',
         ropsten: '0x0790Df08a20d9F1BC8A38bb82007134934b07f18'
       }
+    },
+    upxau: {
+      burn: {
+        fulfiller: {
+          mainnet: '0x5155e9593973CaC956641328A81EdE1e140c27DB',
+          ropsten: '0x4C996215a2acE0Dbd455DcBBe5bb01806C740be0'
+        },
+        requester: {
+          mainnet: '0x340d693ED55d7bA167D184ea76Ea2Fd092a35BDc',
+          ropsten: '0x7f87dDCc6dFe53ccECdfA0beba1b07F112FEcf98'
+        }
+      },
+      mint: {
+        fulfiller: {
+          mainnet: '0x5155e9593973CaC956641328A81EdE1e140c27DB',
+          ropsten: '0x4C996215a2acE0Dbd455DcBBe5bb01806C740be0'
+        },
+        requester: {
+          mainnet: '0x340d693ED55d7bA167D184ea76Ea2Fd092a35BDc',
+          ropsten: '0x7f87dDCc6dFe53ccECdfA0beba1b07F112FEcf98'
+        }
+      },
+      owner: {
+        mainnet: '0x79de3BD357e2c2e97A18e7661317DcF71Afe6f5A',
+        ropsten: '0x9003bDcB233C42535204635ef2D02614f7D87444'
+      },
+      requestsOwner: {
+        mainnet: '0x14239AAbE9c5d70D5c74a8Bf8B00B805aF6c2517',
+        ropsten: '0x66F4aCcD20521e1dfBB2b74011C50d85f1258Fee'
+      },
+      requestsStorageOwner: {
+        mainnet: '0xbE7B525eA0d35C90eF8f7dd3E0939f00Ef3C8880',
+        ropsten: '0xC69E9A8e8e9872e516bDDDf968193A9082EFcE26'
+      }
     }
   },
   upbtc: {
@@ -184,6 +218,12 @@ module.exports = {
       }
     },
     upusd: {
+      feeBeneficiary: {
+        mainnet: '0x825B9Bbd5De09528c8D1E405D83330161EF0aCf0',
+        ropsten: '0x02850569a73702491bb232ac334a0b94f48bc4ed'
+      }
+    },
+    upxau: {
       feeBeneficiary: {
         mainnet: '0x825B9Bbd5De09528c8D1E405D83330161EF0aCf0',
         ropsten: '0x02850569a73702491bb232ac334a0b94f48bc4ed'

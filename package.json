@@ -13,7 +13,7 @@
     "coverage": "./node_modules/.bin/solidity-coverage",
     "lint": "eslint config migrations test truffle.js",
     "solium": "./node_modules/.bin/solium -d contracts",
-    "start": "ganache-cli -a 40 -g 0x01 -e 100000 -i 1547047525792",
+    "start": "ganache-cli -a 100 -g 0x01 -e 100000 -i 1547047525792",
     "test": "truffle test"
   },
   "pre-commit": [

@@ -28,5 +28,9 @@ module.exports = {
   upusd: {
     burnFee: 0,
     mintFee: 0
+  },
+  upxau: {
+    burnFee: 0,
+    mintFee: 0
   }
 };

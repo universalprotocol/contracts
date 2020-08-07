@@ -27,7 +27,8 @@ module.exports = {
     },
     mainnet: {
       confirmations: 2,
-      gasPrice: 5 * 1e9,
+      gas: 250000,
+      gasPrice: 30 * 1e9,
       network_id: '1',
       provider: () => new LedgerWalletProvider({
         accountsLength: 1,
@@ -38,7 +39,6 @@ module.exports = {
       }, `https://mainnet.infura.io/v3/${config.get('infura.apiKey')}`, true)
     },
     ropsten: {
-      gas: 100000,
       gasPrice: 20 * 1e9,
       network_id: '3',
       provider: () => new LedgerWalletProvider({

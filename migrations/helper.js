@@ -48,6 +48,14 @@ module.exports = {
     upeurOwner,
     upeurRequestsOwner,
     upeurRequestsStorageOwner,
+    upxauBurnFulfiller,
+    upxauBurnRequester,
+    upxauFeeBeneficiary,
+    upxauMintFulfiller,
+    upxauMintRequester,
+    upxauOwner,
+    upxauRequestsOwner,
+    upxauRequestsStorageOwner,
     proxyTokenRegistryOwner
   ]) {
     return {
@@ -84,6 +92,14 @@ module.exports = {
       upusdOwner,
       upusdRequestsOwner,
       upusdRequestsStorageOwner,
+      upxauBurnFulfiller,
+      upxauBurnRequester,
+      upxauFeeBeneficiary,
+      upxauMintFulfiller,
+      upxauMintRequester,
+      upxauOwner,
+      upxauRequestsOwner,
+      upxauRequestsStorageOwner,
       whitelister
     };
   }
